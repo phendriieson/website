@@ -1,0 +1,15 @@
+{
+  "rules": {
+    ".read": true,
+    "admins": {
+      ".read": true,
+      ".write": false
+    },
+    "usar": {
+      ".write": "root.child('admins/' + auth.uid).val() === true"
+    },
+    "mba": {
+      ".write": "root.child('admins/' + auth.uid).val() === true"
+    }
+  }
+}
